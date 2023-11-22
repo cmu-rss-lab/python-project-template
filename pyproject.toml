@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "project-name"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flake8-comprehensions = "^3.14.0"
+flake8-use-fstring = "^1.4"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.7.0"
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+ruff = "^0.1.6"
+nox = "^2023.4.22"
+
+[tool.mypy]
+ignore_missing_imports = false
+strict = true
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+src = ["src"]
+select = [
+    "ALL",  # includes all rules (including new ones)
+]
+extend-ignore = [
+    "D203",  # one-blank-line-before-class
+    "D213",  # multi-line-summary-second-line
+    "D104",  # missing docstring in public package
+    "D103",  # missing docstring in public function
+    "D100",  # missing docstring in public module
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
