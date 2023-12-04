@@ -31,6 +31,7 @@ select = [
 extend-ignore = [
     "ANN101",   # missing type annotation for 'self' in method
     "ANN102",   # missing type annotation for 'cls' in classmethod
+    "ANN401",   # dynamically typed expressions (typing.Any) are disallowed
     "B024",     # use of abstract base class without abstract methods
     "D100",     # missing docstring in public module
     "D101",     # missing docstring in public class
@@ -42,6 +43,7 @@ extend-ignore = [
     "D203",     # one-blank-line-before-class
     "D204",     # 1 blank line required after class docstring
     "D213",     # multi-line-summary-second-line
+    "D401",     # first line of docstring should be in imperative mood
     "FIX001",   # unresolved FIXME
     "FIX002",   # TODO found
     "S101",     # use of assertions
