@@ -7,9 +7,6 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-flake8-comprehensions = "^3.14.0"
-flake8-use-fstring = "^1.4"
-flake8-commas = "^2.1.0"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.7.0"
@@ -17,6 +14,11 @@ pytest = "^7.4.3"
 pytest-cov = "^4.1.0"
 ruff = "^0.1.6"
 nox = "^2023.4.22"
+flake8-comprehensions = "^3.14.0"
+flake8-use-fstring = "^1.4"
+flake8-commas = "^2.1.0"
+tryceratops = "^2.3.2"
+
 
 [tool.mypy]
 ignore_missing_imports = false
