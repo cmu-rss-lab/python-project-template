@@ -29,11 +29,24 @@ select = [
     "ALL",  # includes all rules (including new ones)
 ]
 extend-ignore = [
-    "D203",  # one-blank-line-before-class
-    "D213",  # multi-line-summary-second-line
-    "D104",  # missing docstring in public package
-    "D103",  # missing docstring in public function
-    "D100",  # missing docstring in public module
+    "D203",     # one-blank-line-before-class
+    "D213",     # multi-line-summary-second-line
+    "D100",     # missing docstring in public module
+    "D101",     # missing docstring in public class
+    "D102",     # missing docstring in public method
+    "D103",     # missing docstring in public function
+    "D104",     # missing docstring in public package
+    "B024",     # use of abstract base class without abstract methods
+    "FIX001",   # unresolved FIXME
+    "FIX002",   # TODO found
+    "TD001",    # invalid TODO tag: `FIXME`
+    "TD002",    # missing author in TODO
+    "TD003",    # missing issue link on line following TODO
+    "TD004",    # missing colon in TODO
+    "TRY003",   # avoid specifying long messages outside the exception class
+    "S101",     # use of assertions
+    "T201",     # use of print
+    "D204",     # 1 blank line required after class docstring
 ]
 
 [build-system]
