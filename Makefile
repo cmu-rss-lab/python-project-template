@@ -11,7 +11,7 @@ lint:
 test:
 	poetry run pytest tests
 
-check: lint
+check: lint test
 
 clean:
 	rm -rf .pytest_cache
