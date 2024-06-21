@@ -1,9 +1,21 @@
 install:
-	poetry install
+	poetry install --with dev
 
-check:
+fix:
+	poetry run ruff check src --fix
+
+lint:
 	poetry run mypy src
-	poetry run ruff src
-	poetry run flake8
+	poetry run ruff check src
 
-.PHONY: check install
+test:
+	poetry run pytest tests
+
+check: lint
+
+clean:
+	rm -rf .pytest_cache
+	rm -rf .mypy_cache
+	rm -rf .ruff_cache
+
+.PHONY: check clean install lint tests
