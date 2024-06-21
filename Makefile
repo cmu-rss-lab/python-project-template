@@ -5,13 +5,15 @@ fix:
 	poetry run ruff check src --fix
 
 lint:
-	poetry run mypy src
 	poetry run ruff check src
+
+type:
+	poetry run mypy src
 
 test:
 	poetry run pytest tests
 
-check: lint test
+check: lint type test
 
 clean:
 	rm -rf .pytest_cache

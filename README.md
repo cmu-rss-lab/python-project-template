@@ -16,10 +16,16 @@ To setup the virtual environment and install your project, run:
 make install
 ```
 
-To use the linter and type checker, run:
+To run the linter:
 
 ```shell
 make lint
+```
+
+To run the type checker:
+
+```shell
+make type
 ```
 
 To run the test suite:
