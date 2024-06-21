@@ -8,6 +8,8 @@ This repository provides a template for Python 3.12 projects based on [Poetry](h
 * [pytest](https://docs.pytest.org/en/8.2.x) is used for writing tests
 * [ruff](https://docs.astral.sh/ruff) is used for linting and formatting
 
+The file also provides a [GitHub Actions](https://docs.github.com/en/actions) workflow that automatically builds, lints, type checks, and tests the project on every commit, pull request, and direct invocation of the workflow.
+
 ## Usage
 
 To setup the virtual environment and install your project, run:
