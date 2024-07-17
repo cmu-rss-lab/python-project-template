@@ -6,5 +6,6 @@
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/poetry:2": {}
 	},
-	"postCreateCommand": "make install"
+	"postCreateCommand": "make install",
+	"remoteUser": "root"
 }
