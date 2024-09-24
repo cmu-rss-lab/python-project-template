@@ -1,4 +1,5 @@
 install:
+	pre-commit install
 	poetry install --with dev
 
 fix:

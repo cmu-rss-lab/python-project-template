@@ -1,0 +1,22 @@
+repos:
+- repo: https://github.com/kynan/nbstripout
+  rev: 0.5.0
+  hooks:
+    - id: nbstripout
+- repo: local
+  hooks:
+    - id: lint
+      name: Lint
+      entry: make lint
+      language: system
+      pass_filenames: false
+    - id: type-check
+      name: Type Check
+      entry: make type
+      language: system
+      pass_filenames: false
+    - id: test
+      name: Test
+      entry: make test
+      language: system
+      pass_filenames: false
