@@ -1,6 +1,6 @@
 install:
-	pre-commit install
 	poetry install --with dev
+	poetry run pre-commit install
 
 fix:
 	poetry run ruff check src --fix
